@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vuoi passare San Valentino con me?</title>
+  <style>
+    body {
+      text-align: center;
+      padding: 50px;
+      font-family: Arial, sans-serif;
+      background-color: #ffc0cb; /* Pink background color */
+    }
+    h1 {
+      color: #ff69b4; /* Hot pink text color */
+    }
+    #valentine-image {
+      max-width: 100%; /* Make sure the image doesn't exceed the container width */
+      border-radius: 10px; /* Optional: Add a border-radius for a rounded appearance */
+    }
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Vuoi passare San Valentino con me?</h1>
+
+  <!-- Add an image with the id "valentine-image" -->
+  <img id="valentine-image" src="https://i.pinimg.com/736x/f6/35/7a/f6357a8bc59a55fb2f6f66e94aa0ca8d.jpg" alt="Valentine's Image">
+
+  <br> <!-- Add a line break to separate the image and buttons -->
+
+  <button onclick="alert('ti conviene, ma ti amo comunque 😊❤️')">Sì</button>
+  <button onclick="alert('che cazzo pensi di fare?')">No</button>
+
+  <script>
+    // Rendi impossibile cliccare sul pulsante 'No'
+    document.querySelector('button:nth-child(2)').addEventListener('click', function(event) {
+      event.preventDefault();
+    });
+  </script>
+</body>
+</html>
